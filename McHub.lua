@@ -1,32 +1,4 @@
-local Player = game:GetService("Players")
-local LocalPlayer = Player.LocalPlayer
-local Char = LocalPlayer.Character
-local Humanoid = Char.Humanoid
-local VirtualInputManager = game:GetService("VirtualInputManager")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local GuiService = game:GetService("GuiService")
-
-equipitem = function(v)
-if LocalPlayer.Backpack:FindFirstChild(v) then
-    local a = LocalPlayer.Backpack:FindFirstChild(v)
-        Humanoid:EquipTool(a)
-    end
-end
-
-
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
-
-local Window = Fluent:CreateWindow({
-    Title = "Fisch " .. Fluent.Version,
-    SubTitle = "Mc Hub",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(580, 460),
-    Acrylic = true,
-    Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl
-})
+local Player = game:GetService("Players")local LocalPlayer = Player.LocalPlayerlocal Char = LocalPlayer.Characterlocal Humanoid = Char.Humanoidlocal VirtualInputManager = game:GetService("VirtualInputManager")local ReplicatedStorage = game:GetService("ReplicatedStorage")local GuiService = game:GetService("GuiService")equipitem = function(v)if LocalPlayer.Backpack:FindFirstChild(v) thenlocal a = LocalPlayer.Backpack:FindFirstChild(v)Humanoid:EquipTool(a)endendlocal Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()local Window = Fluent:CreateWindow({Title = "Fisch " .. Fluent.Version,SubTitle = "Mc Hub",TabWidth = 160,Size = UDim2.fromOffset(580, 460),Acrylic = true, Theme = "Dark",MinimizeKey = Enum.KeyCode.LeftControl})
 
 
 local Tabs = {
