@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local Monster = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -11,12 +6,8 @@ local Clear = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local Source = Instance.new("TextBox")
 local UICorner_2 = Instance.new("UICorner")
-
---Properties:
-
 Monster.Name = "Monster"
 Monster.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
 Main.Name = "Main"
 Main.Parent = Monster
 Main.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
